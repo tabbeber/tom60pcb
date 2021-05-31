@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ptm-60nrf)(type KiCad)(uri ${KIPRJMOD}/ptm-60nrf.pretty)(options "")(descr ""))
+)
