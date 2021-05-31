@@ -22,11 +22,18 @@ Ideally uses a 2-pin JST connector, but can probably also be soldered directly t
 
 As a chip this PCB uses the same [Holyiot 18010](https://www.aliexpress.com/item/32868002366.html) chip that the isometria75 does. This chip comes without a bootloader, and thus need to be programmed before use.
 
+Currently the PCB uses a forced tsangan layout for the bottom row, while the rest should be fairly universal; support for split backspace, iso and ansi.
+
  
 # Current progress
 
 Currently the project requires some more work with it's footprints, but it's almost ready to order for a prototype. No parts are currently ordered for the future prototype.
 
+# To-do
+- [ ] Order PCB prototype
+- [ ] Order Battery, MCU, and Programmer for the MCU
+- [ ] Probable fixes
+- [ ] Write and configure firmware
 
 # Future advancements?
 
