@@ -9,9 +9,9 @@ Most of them are closed source or difficult to get hold of.
 This is also mostly a project for me build skills within PCB design.
 Feel free to come with any feedback - I have no clue what I'm doing.
 
-![PCB Front](/front.png)
+![PCB Front](/img/front.png)
 
-![PCB Back](/back.png)
+![PCB Back](/img/back.png)
 
 # Current parts
 
