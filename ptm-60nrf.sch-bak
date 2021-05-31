@@ -245,6 +245,38 @@ F 3 "" H 6600 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6600 1900
+Wire Wire Line
+	5400 2400 5400 2350
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 60FDA114
+P 7600 2250
+F 0 "J3" H 7518 1825 50  0000 C CNN
+F 1 "JST" H 7518 1916 50  0000 C CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 7600 2250 50  0001 C CNN
+F 3 "~" H 7600 2250 50  0001 C CNN
+	1    7600 2250
+	1    0    0    1   
+$EndComp
+Connection ~ 5400 2350
+Wire Wire Line
+	5400 2350 5400 1100
+Wire Wire Line
+	6400 1700 6400 2150
+Wire Wire Line
+	6200 1700 6200 2250
+Wire Wire Line
+	5400 2350 7400 2350
+Wire Wire Line
+	7400 2250 6200 2250
+Connection ~ 6200 2250
+Wire Wire Line
+	6200 2250 6200 2400
+Wire Wire Line
+	7400 2150 6400 2150
+Connection ~ 6400 2150
+Wire Wire Line
+	6400 2150 6400 2400
 Wire Notes Line
 	5300 2950 8150 2950
 Wire Notes Line
@@ -528,6 +560,13 @@ $EndComp
 Text GLabel 8600 1450 0    50   Input ~ 0
 VBAT
 Wire Wire Line
+	6900 1700 6900 2050
+Wire Wire Line
+	7400 2050 6900 2050
+Connection ~ 6900 2050
+Wire Wire Line
+	6900 2050 6900 2400
+Wire Wire Line
 	4550 4800 4550 6000
 Wire Notes Line
 	4000 650  8150 650 
@@ -674,12 +713,4 @@ Wire Notes Line
 	5300 650  5300 3350
 Text Notes 4700 3300 0    50   ~ 0
 ESD-protection
-Wire Wire Line
-	5400 1100 5400 2400
-Wire Wire Line
-	6200 1700 6200 2400
-Wire Wire Line
-	6400 1700 6400 2400
-Wire Wire Line
-	6900 1700 6900 2400
 $EndSCHEMATC
