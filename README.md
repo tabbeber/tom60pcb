@@ -15,14 +15,14 @@ Feel free to come with any feedback - I have no clue what I'm doing.
 
 # Current parts
 
-Currently this design requires [smaller lithium batteries](https://www.aliexpress.com/item/32831998939.html) which are placed between the PCB and plate of the build.
+Currently this design requires [smaller lithium batteries](https://www.aliexpress.com/item/32831998939.html), which are placed between the PCB and plate of the build.
 These batteries are only 3mm tall, 30mm long and 12mm wide.
 This approach is not suited for plateless builds.
 Ideally uses a 2-pin JST connector, but can probably also be soldered directly to the PCB.
 
-As a chip this PCB uses the same [Holyiot 18010](https://www.aliexpress.com/item/32868002366.html) chip that the isometria75 does. This chip comes without a bootloader, and thus need to be programmed before use.
+This PCB uses the same [Holyiot 18010](https://www.aliexpress.com/item/32868002366.html) chip that the isometria75 does. This chip comes without a bootloader, and thus need to be programmed before use.
 
-Currently the PCB uses a forced tsangan layout for the bottom row, while the rest should be fairly universal; support for split backspace, iso and ansi.
+Currently the PCB uses a forced tsangan layout for the bottom row to make space for the MCU and the battery, while the rest should be fairly universal; support for split backspace, iso and ansi.
 
  
 # Current progress
