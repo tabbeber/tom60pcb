@@ -9,6 +9,10 @@ Most of them are closed source or difficult to get hold of.
 This is also mostly a project for me build skills within PCB design.
 Feel free to come with any feedback - I have no clue what I'm doing.
 
+This project was originally born out of an idea to create a PCB which was specifically made for gummyworm-mounting in regular tray mount cases without needing to massacre the poor case.
+Eventually the PCB looked decent, and regular tray mount PCB would likely have a broader appeal than some hacky gummywork gasket.
+Thus this became a baseline for future wireless PCB projects - _if it works_.
+
 ![PCB Front](/img/front.png)
 
 ![PCB Back](/img/back.png)
@@ -40,12 +44,8 @@ Currently the project requires some more work with its footprints, but it's almo
 - [ ] Write and configure firmware (bootloader, ZMK)
 - [ ] Possibly make a small wiki?
 
-# Future advancements?
+# Possibilities
 
-A possibility could be to use a different chip, like an nRF52840 E73, which seem to be abundant on sites like aliexpress.
-Modified versions for ortho, gummyworm mount, FR4-kits and the like could be a possibility. 
-This project was originally born out of an idea to create a PCB which was specifically made for gummyworm-mounting in regular tray mount cases without needing to massacre the poor case.
-This eventually looked like it could be a good PCB, and regular tray mount seems to have a broader appeal than some hacky gummywork gasket.
-Thus it became a baseline for future wireless PCBs - _if it works_.
-
+* Use of different chip(format), like the nRF52840 in the E73 format, which seem abundant on aliexpress
+* Modified versions for ortho, gummyworm mount, and through-hole kits. 
 
