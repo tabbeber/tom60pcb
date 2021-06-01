@@ -13,6 +13,8 @@ Feel free to come with any feedback - I have no clue what I'm doing.
 
 ![PCB Back](/img/back.png)
 
+![Supported layouts](/img/keyboard-layout.png)
+
 # Current parts
 
 Currently this design requires a [smaller lithium battery](https://www.aliexpress.com/item/32831998939.html), which is placed between the PCB and plate of the build.
