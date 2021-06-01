@@ -32,7 +32,7 @@ Currently the PCB uses a forced tsangan layout for the bottom row to make space 
 Currently the project requires some more work with its footprints, but it's almost ready for prototyping. No parts are currently ordered for the future prototype.
 
 # To-do
-- [ ] Make a supported layout chart
+- [x] Make a supported layout chart
 - [ ] Fix PXB and make it ready for ordering
 - [ ] Order PCB prototype
 - [ ] Order Battery, MCU, and Programmer for the MCU
