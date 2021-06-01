@@ -2,7 +2,7 @@
 
 This project is inspired by [isometria75](https://github.com/ebastler/isometria-75). 
 Schematics and parts were used as a baseline, together with some information from the [nrfMicro-project](https://github.com/joric/nrfmicro/). 
-Also thanks to Martin in the Norwegian mechanical keyboard discord for feedback and a sweet tiny logo.
+Also thanks to Martin in the Norwegian mechanical keyboard discord for feedback and a slick logo to put on it.
 
 What this project attempts to do is to fill a gap in the mid-tier of the custom mechanical keyboard market, where bluetooth/wireless boards are few and far between. 
 Most of them are closed source or difficult to get hold of.
