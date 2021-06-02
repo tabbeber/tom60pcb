@@ -259,8 +259,8 @@ $Comp
 L Device:Q_PMOS_GSD Q1
 U 1 1 610594FA
 P 2650 950
-F 0 "Q1" H 2855 996 50  0000 L CNN
-F 1 "AO3407" H 2850 900 50  0000 L CNN
+F 0 "Q1" H 2850 950 50  0000 L CNN
+F 1 "AO3407" H 2850 850 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 2850 1050 50  0001 C CNN
 F 3 "~" H 2650 950 50  0001 C CNN
 	1    2650 950 
@@ -293,8 +293,6 @@ F 3 "" H 2450 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 1350 2650 1350
-Wire Wire Line
 	2750 1350 2750 1250
 Connection ~ 2450 1350
 $Comp
@@ -310,7 +308,6 @@ F 3 "~" V 2550 1350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2650 1350 2750 1350
-Connection ~ 2650 1350
 $Comp
 L Regulator_Linear:AP2112K-3.3 U2
 U 1 1 610612B4
@@ -356,8 +353,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 4550 1000 
 $EndComp
 Wire Wire Line
 	4250 750  4700 750 
-Text GLabel 4300 950  0    50   Input ~ 0
-VBAT
 $Comp
 L Device:R_Small R1
 U 1 1 61083F59
@@ -446,28 +441,6 @@ F 3 "" H 8500 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG02
-U 1 1 610AA7ED
-P 8950 1000
-F 0 "#FLG02" H 8950 1075 50  0001 C CNN
-F 1 "PWR_FLAG" H 8950 1173 50  0000 C CNN
-F 2 "" H 8950 1000 50  0001 C CNN
-F 3 "~" H 8950 1000 50  0001 C CNN
-	1    8950 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG03
-U 1 1 610AABBC
-P 9400 1000
-F 0 "#FLG03" H 9400 1075 50  0001 C CNN
-F 1 "PWR_FLAG" H 9400 1173 50  0000 C CNN
-F 2 "" H 9400 1000 50  0001 C CNN
-F 3 "~" H 9400 1000 50  0001 C CNN
-	1    9400 1000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG04
 U 1 1 610AB96B
 P 9850 1000
@@ -478,10 +451,6 @@ F 3 "~" H 9850 1000 50  0001 C CNN
 	1    9850 1000
 	1    0    0    -1  
 $EndComp
-Text GLabel 8950 1000 3    50   Input ~ 0
-VDD
-Text GLabel 9400 1000 3    50   Input ~ 0
-VBAT
 Text GLabel 9850 1000 3    50   Input ~ 0
 VBUS
 $Comp
@@ -672,4 +641,34 @@ Wire Wire Line
 	4250 4800 4550 4800
 Text GLabel 4250 5500 3    50   Input ~ 0
 VDD
+NoConn ~ 5700 1700
+NoConn ~ 5800 1700
+NoConn ~ 2300 5200
+NoConn ~ 2300 5100
+NoConn ~ 2300 5000
+NoConn ~ 2300 4900
+NoConn ~ 2300 4600
+NoConn ~ 2300 4500
+NoConn ~ 2300 4400
+NoConn ~ 2300 4300
+NoConn ~ 2300 4200
+NoConn ~ 2300 4100
+NoConn ~ 2300 4000
+NoConn ~ 2300 3900
+NoConn ~ 2300 3800
+NoConn ~ 3700 3800
+NoConn ~ 3700 3900
+NoConn ~ 3700 4000
+NoConn ~ 3700 4100
+NoConn ~ 3700 4200
+NoConn ~ 3700 4300
+NoConn ~ 3700 4400
+NoConn ~ 3700 4500
+NoConn ~ 3700 4600
+NoConn ~ 3700 5800
+NoConn ~ 3700 5900
+NoConn ~ 4500 1900
+NoConn ~ 4300 1900
+Text GLabel 4300 950  0    50   Input ~ 0
+VBAT
 $EndSCHEMATC

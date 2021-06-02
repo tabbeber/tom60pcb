@@ -37,9 +37,9 @@ Currently the project requires some more work with its footprints, but it's almo
 
 # To-do
 - [x] Make a supported layout chart
+- [x] Order Battery, MCU, and Programmer for the MCU
 - [ ] Fix PCB and make it ready for ordering
 - [ ] Order PCB prototype
-- [ ] Order Battery, MCU, and Programmer for the MCU
 - [ ] Probable fixes
 - [ ] Write and configure firmware (bootloader, ZMK)
 - [ ] Possibly make a small wiki?
