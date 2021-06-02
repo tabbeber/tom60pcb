@@ -36,7 +36,7 @@ F 3 "" H 4250 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3700 4800 4550 4800
+	3700 4800 4250 4800
 Text GLabel 3400 6650 3    50   BiDi ~ 0
 USB-D-
 Wire Wire Line
@@ -50,14 +50,14 @@ VBUS
 Wire Wire Line
 	3300 6650 3300 6500
 $Comp
-L Connector_Generic:Conn_01x03 J4
+L Connector_Generic:Conn_01x04 J4
 U 1 1 60B2E742
-P 4450 5400
-F 0 "J4" H 4450 5700 50  0000 R CNN
-F 1 "SWD" H 4500 5600 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4450 5400 50  0001 C CNN
-F 3 "~" H 4450 5400 50  0001 C CNN
-	1    4450 5400
+P 4450 5300
+F 0 "J4" H 4450 5600 50  0000 R CNN
+F 1 "SWD" H 4500 5500 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4450 5300 50  0001 C CNN
+F 3 "~" H 4450 5300 50  0001 C CNN
+	1    4450 5300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -73,8 +73,6 @@ Wire Wire Line
 Connection ~ 4250 6000
 Wire Wire Line
 	4250 6000 4250 6100
-Wire Wire Line
-	4250 6000 4250 5500
 $Comp
 L power:GND #PWR010
 U 1 1 60B3F85A
@@ -142,11 +140,9 @@ Text GLabel 2200 6000 0    50   Output ~ 0
 COL0
 Wire Wire Line
 	2200 6000 2300 6000
-Text GLabel 3800 5900 2    50   Output ~ 0
-COL7
-Wire Wire Line
-	3800 5900 3700 5900
 Text GLabel 3800 5700 2    50   Output ~ 0
+COL7
+Text GLabel 3800 5600 2    50   Output ~ 0
 COL8
 Wire Wire Line
 	3800 5700 3700 5700
@@ -251,21 +247,6 @@ Wire Notes Line
 	8150 2950 8150 650 
 Text Notes 5300 600  0    50   ~ 0
 USB-C Port
-$Comp
-L Device:Crystal_Small Y1
-U 1 1 61023DE6
-P 4150 5700
-F 0 "Y1" V 4100 5850 50  0000 L CNN
-F 1 "32.768Hz" V 4200 5850 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_MicroCrystal_CM9V-T1A-2Pin_1.6x1.0mm" H 4150 5700 50  0001 C CNN
-F 3 "~" H 4150 5700 50  0001 C CNN
-	1    4150 5700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4150 5600 3700 5600
-Wire Wire Line
-	4150 5800 3700 5800
 Text GLabel 2500 6650 3    50   Output ~ 0
 VDD
 Wire Wire Line
@@ -682,4 +663,13 @@ Wire Wire Line
 	6400 1700 6400 2400
 Wire Wire Line
 	6900 1700 6900 2400
+Wire Wire Line
+	3800 5600 3700 5600
+Wire Wire Line
+	4250 5200 4250 4800
+Connection ~ 4250 4800
+Wire Wire Line
+	4250 4800 4550 4800
+Text GLabel 4250 5500 3    50   Input ~ 0
+VDD
 $EndSCHEMATC
