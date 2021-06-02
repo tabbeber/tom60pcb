@@ -1443,8 +1443,6 @@ Connection ~ 7100 3250
 Wire Wire Line
 	7300 2100 7300 2850
 Connection ~ 7300 2100
-Wire Wire Line
-	7300 3600 7300 4350
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX16
 U 1 1 60BCE399
@@ -1769,17 +1767,6 @@ Wire Wire Line
 	7300 3600 7300 2850
 Connection ~ 7300 3600
 Connection ~ 7300 2850
-$Comp
-L MX_Alps_Hybrid:MX-NoLED MX61
-U 1 1 61165F70
-P 7400 3650
-F 0 "MX61" H 7450 3850 60  0000 R CNN
-F 1 "MX-NoLED" H 7450 3800 20  0000 R CNN
-F 2 "MX_Only:MXOnly-2.75U-NoLED" H 6775 3625 60  0001 C CNN
-F 3 "" H 6775 3625 60  0001 C CNN
-	1    7400 3650
-	-1   0    0    -1  
-$EndComp
 Connection ~ 7100 4000
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX33
@@ -1856,7 +1843,7 @@ F 1 "MX-NoLED" H 2100 3050 20  0000 R CNN
 F 2 "MX_Only:MXOnly-1.75U-NoLED" H 1375 2875 60  0001 C CNN
 F 3 "" H 1375 2875 60  0001 C CNN
 	1    2000 2900
-	-1   0    0    -1  
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5750 1750 6200 1750
@@ -1869,16 +1856,12 @@ Connection ~ 7550 1550
 Wire Wire Line
 	2050 3800 1650 3800
 Connection ~ 1650 3800
-Wire Wire Line
-	2050 3050 1650 3050
 Connection ~ 1650 3050
 Wire Wire Line
 	7950 3050 7550 3050
 Connection ~ 7550 3050
 Wire Wire Line
 	7100 4000 8050 4000
-Wire Wire Line
-	7450 3800 7100 3800
 Connection ~ 7100 3800
 Wire Wire Line
 	1650 4000 2100 4000
@@ -1891,4 +1874,21 @@ Wire Wire Line
 	2100 3250 1650 3250
 Connection ~ 2100 3250
 Connection ~ 1650 3250
+Wire Wire Line
+	7300 3600 7300 4350
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX61
+U 1 1 61165F70
+P 7450 3650
+F 0 "MX61" H 7500 3850 60  0000 R CNN
+F 1 "MX-NoLED" H 7500 3800 20  0000 R CNN
+F 2 "MX_Only:MXOnly-2.75U-NoLED" H 6825 3625 60  0001 C CNN
+F 3 "" H 6825 3625 60  0001 C CNN
+	1    7450 3650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3800 7500 3800
+Wire Wire Line
+	1650 3050 2050 3050
 $EndSCHEMATC
