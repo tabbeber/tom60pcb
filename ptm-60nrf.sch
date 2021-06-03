@@ -92,15 +92,15 @@ U 60B575D4
 F0 "Matrix" 50
 F1 "matrix.sch" 50
 $EndSheet
-Text GLabel 3800 4900 2    50   Input ~ 0
+Text GLabel 3100 6650 3    50   Input ~ 0
 ROW0
-Text GLabel 3800 5000 2    50   Input ~ 0
+Text GLabel 3000 6650 3    50   Input ~ 0
 ROW1
-Text GLabel 3800 5100 2    50   Input ~ 0
+Text GLabel 2900 6650 3    50   Input ~ 0
 ROW2
-Text GLabel 3800 5200 2    50   Input ~ 0
+Text GLabel 2800 6650 3    50   Input ~ 0
 ROW3
-Text GLabel 3800 5500 2    50   Input ~ 0
+Text GLabel 3800 5700 2    50   Input ~ 0
 ROW4
 Wire Wire Line
 	3800 4900 3700 4900
@@ -112,61 +112,61 @@ Wire Wire Line
 	3800 5200 3700 5200
 Wire Wire Line
 	3800 5500 3700 5500
-Text GLabel 3100 6650 3    50   Output ~ 0
+Text GLabel 2200 6000 0    50   Output ~ 0
 COL6
 Wire Wire Line
 	3100 6500 3100 6650
-Text GLabel 3000 6650 3    50   Output ~ 0
+Text GLabel 2200 5900 0    50   Output ~ 0
 COL5
 Wire Wire Line
 	3000 6500 3000 6650
-Text GLabel 2900 6650 3    50   Output ~ 0
+Text GLabel 2200 5800 0    50   Output ~ 0
 COL4
 Wire Wire Line
 	2900 6500 2900 6650
-Text GLabel 2800 6650 3    50   Output ~ 0
+Text GLabel 2200 5700 0    50   Output ~ 0
 COL3
 Wire Wire Line
 	2800 6500 2800 6650
-Text GLabel 2700 6650 3    50   Output ~ 0
+Text GLabel 2200 5600 0    50   Output ~ 0
 COL2
 Wire Wire Line
 	2700 6500 2700 6650
-Text GLabel 2600 6650 3    50   Output ~ 0
+Text GLabel 2200 5500 0    50   Output ~ 0
 COL1
 Wire Wire Line
 	2600 6500 2600 6650
-Text GLabel 2200 6000 0    50   Output ~ 0
+Text GLabel 2200 5400 0    50   Output ~ 0
 COL0
 Wire Wire Line
 	2200 6000 2300 6000
-Text GLabel 3800 5700 2    50   Output ~ 0
+Text GLabel 2600 6650 3    50   Output ~ 0
 COL7
-Text GLabel 3800 5600 2    50   Output ~ 0
+Text GLabel 2700 6650 3    50   Output ~ 0
 COL8
 Wire Wire Line
 	3800 5700 3700 5700
-Text GLabel 2200 5400 0    50   Output ~ 0
+Text GLabel 3800 5600 2    50   Output ~ 0
 COL9
 Wire Wire Line
 	2200 5400 2300 5400
-Text GLabel 2200 5900 0    50   Output ~ 0
+Text GLabel 3800 4900 2    50   Output ~ 0
 COL14
 Wire Wire Line
 	2200 5900 2300 5900
-Text GLabel 2200 5800 0    50   Output ~ 0
+Text GLabel 3800 5000 2    50   Output ~ 0
 COL13
 Wire Wire Line
 	2200 5800 2300 5800
-Text GLabel 2200 5700 0    50   Output ~ 0
+Text GLabel 3800 5100 2    50   Output ~ 0
 COL12
 Wire Wire Line
 	2200 5700 2300 5700
-Text GLabel 2200 5600 0    50   Output ~ 0
+Text GLabel 3800 5200 2    50   Output ~ 0
 COL11
 Wire Wire Line
 	2200 5600 2300 5600
-Text GLabel 2200 5500 0    50   Output ~ 0
+Text GLabel 3800 5500 2    50   Output ~ 0
 COL10
 Wire Wire Line
 	2200 5500 2300 5500
@@ -292,8 +292,6 @@ F 3 "" H 2450 1550 50  0001 C CNN
 	1    2450 1550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2750 1350 2750 1250
 Connection ~ 2450 1350
 $Comp
 L Device:D_Schottky_Small D2
@@ -319,7 +317,6 @@ F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 3050 1450 50  0001 C
 	1    3050 1350
 	1    0    0    -1  
 $EndComp
-Connection ~ 2750 1350
 $Comp
 L power:GND #PWR07
 U 1 1 61063B0E
@@ -333,7 +330,6 @@ F 3 "" H 3050 1650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2750 1150 2750 1250
-Connection ~ 2750 1250
 Text GLabel 3350 1250 2    50   Input ~ 0
 VDD
 Wire Notes Line width 8
@@ -671,4 +667,8 @@ NoConn ~ 4500 1900
 NoConn ~ 4300 1900
 Text GLabel 4300 950  0    50   Input ~ 0
 VBAT
+Wire Wire Line
+	2750 1250 2750 1350
+Connection ~ 2750 1250
+Connection ~ 2750 1350
 $EndSCHEMATC
