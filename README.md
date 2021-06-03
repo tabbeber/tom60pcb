@@ -38,13 +38,12 @@ Currently the project requires some more work with its footprints, but it's almo
 # To-do
 - [x] Make a supported layout chart
 - [x] Order Battery, MCU, and Programmer for the MCU
-- [ ] Fix PCB and make it ready for ordering
+- [ ] Fix PCB and final touchups
 - [ ] Order PCB prototype
-- [ ] Probable fixes
 - [ ] Write and configure firmware (bootloader, ZMK)
 - [ ] Possibly make a small wiki?
 
-# Possibilities
+# Future possibilities
 
 * Use of different chip(format), like the nRF52840 in the E73 format, which seem abundant on aliexpress
 * Modified versions for ortho, gummyworm mount, and through-hole kits. 
