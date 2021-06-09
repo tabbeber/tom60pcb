@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 1450 1750 0    50   Output ~ 0
+Text GLabel 1650 1750 0    50   Output ~ 0
 ROW0
 Text GLabel 1850 1100 1    50   Input ~ 0
 COL0
@@ -28,10 +28,6 @@ F 3 "" H 1075 1325 60  0001 C CNN
 	1    1700 1350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1850 1100 1850 1300
-Wire Wire Line
-	1450 1750 1650 1750
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX2
 U 1 1 60B5BB99
@@ -56,9 +52,8 @@ F 3 "" H 1075 2125 60  0001 C CNN
 	1    1700 2150
 	1    0    0    -1  
 $EndComp
-Text GLabel 1450 2500 0    50   Output ~ 0
+Text GLabel 1650 2500 0    50   Output ~ 0
 ROW1
-Connection ~ 1650 1750
 Text GLabel 2300 1100 1    50   Input ~ 0
 COL1
 $Comp
@@ -84,8 +79,6 @@ F 4 "C2128" H 1650 3150 50  0001 C CNN "JLCPCB"
 	1    1650 3150
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1450 3250 1650 3250
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX47
 U 1 1 60B7846F
@@ -111,7 +104,7 @@ $EndComp
 Wire Wire Line
 	1850 2100 1850 2850
 Connection ~ 1850 2100
-Text GLabel 1450 3250 0    50   Output ~ 0
+Text GLabel 1650 3250 0    50   Output ~ 0
 ROW2
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX63
@@ -898,9 +891,9 @@ $EndComp
 Wire Wire Line
 	8250 2100 8250 3600
 Connection ~ 8250 2100
-Text GLabel 1450 4000 0    50   Output ~ 0
+Text GLabel 1650 4000 0    50   Output ~ 0
 ROW3
-Text GLabel 1450 4750 0    50   Output ~ 0
+Text GLabel 1650 4750 0    50   Output ~ 0
 ROW4
 Connection ~ 8250 3600
 Wire Wire Line
@@ -995,7 +988,6 @@ Connection ~ 1650 3050
 Wire Wire Line
 	7950 3050 7550 3050
 Connection ~ 7550 3050
-Connection ~ 1650 3250
 Wire Wire Line
 	7300 3600 7300 4350
 $Comp
@@ -1136,8 +1128,6 @@ F 4 "C68978" H 7850 1550 50  0001 C CNN "JLCPCB"
 	1    7850 1550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1450 2500 1900 2500
 $Comp
 L Diode:BAV70 D11
 U 1 1 60C705B6
@@ -1150,7 +1140,6 @@ F 4 "C68978" H 1900 2300 50  0001 C CNN "JLCPCB"
 	1    1900 2300
 	-1   0    0    -1  
 $EndComp
-Connection ~ 1900 2500
 Wire Wire Line
 	1600 2300 1650 2300
 Wire Wire Line
@@ -1384,8 +1373,6 @@ Wire Wire Line
 	6600 3050 6650 3050
 Wire Wire Line
 	7100 3050 7200 3050
-Wire Wire Line
-	1450 4000 1950 4000
 $Comp
 L Diode:BAV70 D26
 U 1 1 60D19158
@@ -1399,7 +1386,6 @@ F 4 "C68978" H 1950 3800 50  0001 C CNN "JLCPCB"
 	-1   0    0    -1  
 $EndComp
 Connection ~ 1650 3800
-Connection ~ 1950 4000
 Wire Wire Line
 	2100 3800 2250 3800
 Wire Wire Line
@@ -1518,23 +1504,6 @@ Wire Wire Line
 	7400 3800 7500 3800
 Wire Wire Line
 	8050 3800 8000 3800
-Wire Wire Line
-	1450 4750 1900 4750
-$Comp
-L Diode:BAV70 D33
-U 1 1 60D73C89
-P 1900 4550
-F 0 "D33" V 1946 4480 50  0000 R CNN
-F 1 "BAV70" V 1855 4480 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" V 1900 4550 50  0001 C CNN
-F 3 "" V 1900 4550 50  0001 C CNN
-F 4 "C68978" H 1900 4550 50  0001 C CNN "JLCPCB"
-	1    1900 4550
-	-1   0    0    -1  
-$EndComp
-Connection ~ 1900 4750
-Wire Wire Line
-	1900 4750 2550 4750
 Wire Wire Line
 	1600 4550 1650 4550
 Wire Wire Line
@@ -1663,4 +1632,151 @@ Wire Wire Line
 	8050 1500 8150 1500
 Wire Wire Line
 	8150 1500 8150 1550
+$Comp
+L Device:Rotary_Encoder_Switch SW1
+U 1 1 60C158E2
+P 1200 1300
+F 0 "SW1" H 1200 933 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 1200 1024 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 1050 1460 50  0001 C CNN
+F 3 "~" H 1200 1560 50  0001 C CNN
+	1    1200 1300
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60C2A547
+P 800 1250
+F 0 "#PWR0103" H 800 1000 50  0001 C CNN
+F 1 "GND" H 800 1100 50  0000 C CNN
+F 2 "" H 800 1250 50  0001 C CNN
+F 3 "" H 800 1250 50  0001 C CNN
+	1    800  1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1300 900  1250
+Wire Wire Line
+	900  1250 800  1250
+Text GLabel 750  2000 3    50   Input ~ 0
+VDD
+$Comp
+L Device:R_Small R9
+U 1 1 60C4BDD1
+P 900 1900
+F 0 "R9" H 950 1900 50  0000 L CNN
+F 1 "10k" H 950 1800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 900 1900 50  0001 C CNN
+F 3 "~" H 900 1900 50  0001 C CNN
+F 4 "C25804" H 900 1900 50  0001 C CNN "JLCPCB"
+	1    900  1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 60C4C4DC
+P 600 1900
+F 0 "R8" H 650 1950 50  0000 L CNN
+F 1 "10k" H 650 1850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 600 1900 50  0001 C CNN
+F 3 "~" H 600 1900 50  0001 C CNN
+F 4 "C25804" H 600 1900 50  0001 C CNN "JLCPCB"
+	1    600  1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 700  1200 1    50   Input ~ 0
+ROTB
+Text GLabel 900  1550 2    50   Input ~ 0
+ROTA
+Wire Wire Line
+	600  1200 600  1650
+Wire Wire Line
+	900  1400 900  1700
+$Comp
+L Device:C_Small C2
+U 1 1 60CA635B
+P 700 1650
+F 0 "C2" V 800 1650 50  0000 C CNN
+F 1 "100nF" V 562 1650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 700 1650 50  0001 C CNN
+F 3 "~" H 700 1650 50  0001 C CNN
+F 4 "C1525" V 700 1650 50  0001 C CNN "JLCPCB"
+	1    700  1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	600  2000 900  2000
+Connection ~ 600  1650
+Wire Wire Line
+	600  1650 600  1800
+Wire Wire Line
+	600  1200 900  1200
+$Comp
+L Device:C_Small C3
+U 1 1 60CC7D82
+P 1000 1700
+F 0 "C3" V 1050 1550 50  0000 C CNN
+F 1 "100nF" V 1100 1750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1000 1700 50  0001 C CNN
+F 3 "~" H 1000 1700 50  0001 C CNN
+F 4 "C1525" V 1000 1700 50  0001 C CNN "JLCPCB"
+	1    1000 1700
+	0    1    1    0   
+$EndComp
+Connection ~ 900  1700
+Wire Wire Line
+	900  1700 900  1800
+Wire Wire Line
+	800  1650 1100 1650
+Wire Wire Line
+	1100 1650 1100 1700
+Wire Wire Line
+	1900 2500 1650 2500
+Connection ~ 1900 2500
+Wire Wire Line
+	1950 4000 1650 4000
+Connection ~ 1950 4000
+Wire Wire Line
+	1900 4750 2550 4750
+$Comp
+L Diode:BAV70 D33
+U 1 1 60D73C89
+P 1900 4550
+F 0 "D33" V 1946 4480 50  0000 R CNN
+F 1 "BAV70" V 1855 4480 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" V 1900 4550 50  0001 C CNN
+F 3 "" V 1900 4550 50  0001 C CNN
+F 4 "C68978" H 1900 4550 50  0001 C CNN "JLCPCB"
+	1    1900 4550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4750 1650 4750
+Connection ~ 1900 4750
+$Comp
+L power:GND #PWR0104
+U 1 1 60CF581A
+P 1250 1650
+F 0 "#PWR0104" H 1250 1400 50  0001 C CNN
+F 1 "GND" H 1250 1500 50  0000 C CNN
+F 2 "" H 1250 1650 50  0001 C CNN
+F 3 "" H 1250 1650 50  0001 C CNN
+	1    1250 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1650 1250 1650
+Connection ~ 1100 1650
+Wire Wire Line
+	1850 1100 1850 1200
+Connection ~ 1850 1200
+Wire Wire Line
+	1850 1200 1850 1300
+Connection ~ 1650 1550
+Wire Wire Line
+	1500 1550 1650 1550
+Wire Wire Line
+	1500 1200 1850 1200
+Wire Wire Line
+	1500 1400 1500 1550
 $EndSCHEMATC
