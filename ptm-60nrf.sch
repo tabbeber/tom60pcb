@@ -640,9 +640,9 @@ ESD-protection
 Wire Wire Line
 	5400 1100 5400 2400
 Wire Wire Line
-	6200 1700 6200 2400
+	6200 1700 6200 2200
 Wire Wire Line
-	6400 1700 6400 2400
+	6400 1700 6400 2300
 Wire Wire Line
 	6900 1700 6900 2400
 Wire Wire Line
@@ -690,4 +690,42 @@ Text GLabel 2300 4900 0    50   Input ~ 0
 ROTA
 Text GLabel 2300 5000 0    50   Input ~ 0
 ROTB
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 60C51412
+P 7450 2200
+F 0 "J3" H 7422 2082 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 7422 2173 50  0000 R CNN
+F 2 "Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical" H 7450 2200 50  0001 C CNN
+F 3 "~" H 7450 2200 50  0001 C CNN
+	1    7450 2200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2400 7250 2400
+Wire Wire Line
+	6400 2300 7250 2300
+Connection ~ 6400 2300
+Wire Wire Line
+	6400 2300 6400 2400
+Wire Wire Line
+	6200 2200 7250 2200
+Connection ~ 6200 2200
+Wire Wire Line
+	6200 2200 6200 2400
+$Comp
+L power:GND #PWR0105
+U 1 1 60C583E0
+P 7100 1950
+F 0 "#PWR0105" H 7100 1700 50  0001 C CNN
+F 1 "GND" H 7105 1777 50  0000 C CNN
+F 2 "" H 7100 1950 50  0001 C CNN
+F 3 "" H 7100 1950 50  0001 C CNN
+	1    7100 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 2100 7250 1950
+Wire Wire Line
+	7250 1950 7100 1950
 $EndSCHEMATC
