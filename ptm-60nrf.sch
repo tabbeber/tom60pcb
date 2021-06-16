@@ -186,11 +186,11 @@ F 4 "C165948" V 6300 1100 50  0001 C CNN "JLCPCB"
 	1    6300 1100
 	0    1    1    0   
 $EndComp
-Text GLabel 6400 2400 3    50   BiDi ~ 0
+Text GLabel 6400 2500 3    50   BiDi ~ 0
 USB-D-
-Text GLabel 6200 2400 3    50   BiDi ~ 0
+Text GLabel 6200 2500 3    50   BiDi ~ 0
 USB-D+
-Text GLabel 6900 2400 3    50   Input ~ 0
+Text GLabel 6900 2600 3    50   Input ~ 0
 VBUS
 $Comp
 L power:GND #PWR09
@@ -579,9 +579,8 @@ U 1 1 610738E5
 P 8600 2250
 F 0 "Reset1" H 8600 2535 50  0000 C CNN
 F 1 "SW_Push" H 8600 2444 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_SKQG_WithStem" H 8600 2450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" H 8600 2450 50  0001 C CNN
 F 3 "~" H 8600 2450 50  0001 C CNN
-F 4 "C202424" H 8600 2250 50  0001 C CNN "JLCPCB"
 	1    8600 2250
 	1    0    0    -1  
 $EndComp
@@ -611,7 +610,7 @@ F 4 "C85364" V 4400 2400 50  0001 C CNN "JLCPCB"
 	0    1    1    0   
 $EndComp
 Text GLabel 4900 2400 2    50   Input ~ 0
-VBUS
+VB
 $Comp
 L power:GND #PWR0102
 U 1 1 610C6D3B
@@ -624,9 +623,9 @@ F 3 "" H 3900 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4300 2900 3    50   Input ~ 0
-USB-D+
+D+
 Text GLabel 4500 2900 3    50   Input ~ 0
-USB-D-
+D-
 Wire Notes Line width 8
 	2200 1850 4000 1850
 Wire Notes Line
@@ -643,8 +642,6 @@ Wire Wire Line
 	6200 1700 6200 2200
 Wire Wire Line
 	6400 1700 6400 2300
-Wire Wire Line
-	6900 1700 6900 2400
 Wire Wire Line
 	3800 5600 3700 5600
 Wire Wire Line
@@ -705,14 +702,6 @@ Wire Wire Line
 	6900 2400 7250 2400
 Wire Wire Line
 	6400 2300 7250 2300
-Connection ~ 6400 2300
-Wire Wire Line
-	6400 2300 6400 2400
-Wire Wire Line
-	6200 2200 7250 2200
-Connection ~ 6200 2200
-Wire Wire Line
-	6200 2200 6200 2400
 $Comp
 L power:GND #PWR0105
 U 1 1 60C583E0
@@ -728,4 +717,80 @@ Wire Wire Line
 	7250 2100 7250 1950
 Wire Wire Line
 	7250 1950 7100 1950
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 60CB1404
+P 6900 1800
+F 0 "F1" H 6950 1850 50  0000 L CNN
+F 1 "500mA" H 6950 1750 50  0000 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 6950 1600 50  0001 L CNN
+F 3 "~" H 6900 1800 50  0001 C CNN
+F 4 "C70069" H 6900 1800 50  0001 C CNN "JLCPCB"
+	1    6900 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R11
+U 1 1 60CB30A9
+P 6400 2400
+F 0 "R11" H 6459 2446 50  0000 L CNN
+F 1 "22" H 6459 2355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6400 2400 50  0001 C CNN
+F 3 "~" H 6400 2400 50  0001 C CNN
+	1    6400 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 6400 2300
+$Comp
+L Device:R_Small R10
+U 1 1 60CB3411
+P 6200 2400
+F 0 "R10" H 6000 2450 50  0000 L CNN
+F 1 "22" H 6050 2350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 2400 50  0001 C CNN
+F 3 "~" H 6200 2400 50  0001 C CNN
+	1    6200 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2200 6200 2300
+Connection ~ 6200 2200
+Wire Wire Line
+	6200 2200 7250 2200
+Connection ~ 6900 2400
+Wire Wire Line
+	6900 2400 6900 2600
+Wire Wire Line
+	6900 1900 6900 2400
+$Comp
+L Device:C_Small C4
+U 1 1 60CE239C
+P 7000 2600
+F 0 "C4" V 7100 2600 50  0000 C CNN
+F 1 "10nF" V 6900 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7000 2600 50  0001 C CNN
+F 3 "~" H 7000 2600 50  0001 C CNN
+F 4 "C15195" V 7000 2600 50  0001 C CNN "JLCPCB"
+	1    7000 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 60CE461E
+P 7400 2600
+F 0 "#PWR0106" H 7400 2350 50  0001 C CNN
+F 1 "GND" H 7405 2427 50  0000 C CNN
+F 2 "" H 7400 2600 50  0001 C CNN
+F 3 "" H 7400 2600 50  0001 C CNN
+	1    7400 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2600 7100 2600
+Text GLabel 6200 1900 0    50   Input ~ 0
+D+
+Text GLabel 6400 1900 0    50   Input ~ 0
+D-
+Text GLabel 6900 1600 2    50   Input ~ 0
+VB
 $EndSCHEMATC

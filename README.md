@@ -41,8 +41,8 @@ Currently the project requires some more work with its footprints, but it's almo
 	* En route est. delivery in a month+
 - [x] Fix PCB and final touchups
 - [x] Order PCB prototype
-	* PCB rev. 0.2 shipping from JLCPCB soon
-	* Rev 0.3 mostly contain cosmetic changes and improved via placements - the electrical and functional configuration remain the same as rev. 0.2
+	* PCB rev. 0.2 has arrived.
+	* Current revision mostly contain cosmetic changes and improved via placements - the electrical and functional configuration remain the same as rev. 0.2
 - [ ] Write and configure firmware (bootloader, ZMK)
 - [ ] Possibly make a small wiki?
 
