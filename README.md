@@ -38,12 +38,12 @@ Currently the project requires some more work with its footprints, but it's almo
 # To-do
 - [x] Make a supported layout chart
 - [x] Order Battery, MCU, and Programmer for the MCU
-	* En route est. delivery in a month+
 - [x] Fix PCB and final touchups
 - [x] Order PCB prototype
-	* PCB rev. 0.2 has arrived.
-	* Current revision mostly contain cosmetic changes and improved via placements - the electrical and functional configuration remain the same as rev. 0.2
-- [ ] Write and configure firmware (bootloader, ZMK)
+	* PCB rev. 0.2 has arrived
+	* Current revision mostly contain cosmetic changes and improved via placements - the electrical and functional configuration remain very similar to rev. 0.2
+- [x] Write and configure firmware (bootloader, ZMK)
+	* ZMK firmware is functional. Currently need to figure out uploading and creating a github actions repo, as per ZMK guidelines.
 - [ ] Possibly make a small wiki?
 
 # Future possibilities

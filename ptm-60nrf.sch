@@ -100,12 +100,8 @@ Text GLabel 2900 6650 3    50   Input ~ 0
 ROW2
 Text GLabel 2800 6650 3    50   Input ~ 0
 ROW3
-Text GLabel 3800 5700 2    50   Input ~ 0
+Text GLabel 3800 5900 2    50   Input ~ 0
 ROW4
-Wire Wire Line
-	3800 4900 3700 4900
-Wire Wire Line
-	3800 5000 3700 5000
 Wire Wire Line
 	3800 5100 3700 5100
 Wire Wire Line
@@ -144,29 +140,27 @@ Text GLabel 2600 6650 3    50   Output ~ 0
 COL7
 Text GLabel 2700 6650 3    50   Output ~ 0
 COL8
-Wire Wire Line
-	3800 5700 3700 5700
-Text GLabel 3800 5600 2    50   Output ~ 0
+Text GLabel 3800 5800 2    50   Output ~ 0
 COL9
 Wire Wire Line
 	2200 5400 2300 5400
-Text GLabel 3800 4900 2    50   Output ~ 0
+Text GLabel 3800 5100 2    50   Output ~ 0
 COL14
 Wire Wire Line
 	2200 5900 2300 5900
-Text GLabel 3800 5000 2    50   Output ~ 0
+Text GLabel 3800 5200 2    50   Output ~ 0
 COL13
 Wire Wire Line
 	2200 5800 2300 5800
-Text GLabel 3800 5100 2    50   Output ~ 0
+Text GLabel 3800 5500 2    50   Output ~ 0
 COL12
 Wire Wire Line
 	2200 5700 2300 5700
-Text GLabel 3800 5200 2    50   Output ~ 0
+Text GLabel 3800 5600 2    50   Output ~ 0
 COL11
 Wire Wire Line
 	2200 5600 2300 5600
-Text GLabel 3800 5500 2    50   Output ~ 0
+Text GLabel 3800 5700 2    50   Output ~ 0
 COL10
 Wire Wire Line
 	2200 5500 2300 5500
@@ -673,8 +667,6 @@ NoConn ~ 3700 4300
 NoConn ~ 3700 4400
 NoConn ~ 3700 4500
 NoConn ~ 3700 4600
-NoConn ~ 3700 5800
-NoConn ~ 3700 5900
 NoConn ~ 4500 1900
 NoConn ~ 4300 1900
 Text GLabel 4300 950  0    50   Input ~ 0
@@ -793,4 +785,12 @@ Text GLabel 6400 1900 0    50   Input ~ 0
 D-
 Text GLabel 6900 1600 2    50   Input ~ 0
 VB
+Wire Wire Line
+	3800 5700 3700 5700
+Wire Wire Line
+	3800 5800 3700 5800
+Wire Wire Line
+	3800 5900 3700 5900
+NoConn ~ 3700 5000
+NoConn ~ 3700 4900
 $EndSCHEMATC

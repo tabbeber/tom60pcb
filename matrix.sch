@@ -767,7 +767,7 @@ F 3 "" H 7475 1325 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8250 1100 8250 1300
+	8250 1100 8250 1200
 Text GLabel 8250 1100 1    50   Input ~ 0
 COL14
 $Comp
@@ -898,17 +898,6 @@ ROW4
 Connection ~ 8250 3600
 Wire Wire Line
 	4400 4750 7100 4750
-$Comp
-L MX_Alps_Hybrid:MX-NoLED MX15
-U 1 1 60F00387
-P 7900 1350
-F 0 "MX15" H 8050 1550 60  0000 R CNN
-F 1 "MX-NoLED" H 8050 1500 20  0000 R CNN
-F 2 "MX_Only:MXOnly-2U-NoLED" H 7275 1325 60  0001 C CNN
-F 3 "" H 7275 1325 60  0001 C CNN
-	1    7900 1350
-	0    1    1    0   
-$EndComp
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX46
 U 1 1 60F2A21D
@@ -1624,10 +1613,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 1500 7200 1550
 Wire Wire Line
-	7950 1500 7550 1500
-Wire Wire Line
 	7550 1500 7550 1550
-Connection ~ 7550 1500
 Wire Wire Line
 	8050 1500 8150 1500
 Wire Wire Line
@@ -1779,4 +1765,25 @@ Wire Wire Line
 	1500 1200 1850 1200
 Wire Wire Line
 	1500 1400 1500 1550
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX15
+U 1 1 60F00387
+P 7900 1250
+F 0 "MX15" H 8050 1450 60  0000 R CNN
+F 1 "MX-NoLED" H 8050 1400 20  0000 R CNN
+F 2 "MX_Only:MXOnly-2U-NoLED" H 7275 1225 60  0001 C CNN
+F 3 "" H 7275 1225 60  0001 C CNN
+	1    7900 1250
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7850 1400 7850 1500
+Wire Wire Line
+	7850 1500 8050 1500
+Connection ~ 8050 1500
+Wire Wire Line
+	8050 1200 8250 1200
+Connection ~ 8250 1200
+Wire Wire Line
+	8250 1200 8250 1300
 $EndSCHEMATC
