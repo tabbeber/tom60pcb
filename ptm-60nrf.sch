@@ -100,14 +100,14 @@ Text GLabel 2900 6650 3    50   Input ~ 0
 ROW2
 Text GLabel 2800 6650 3    50   Input ~ 0
 ROW3
-Text GLabel 3800 5900 2    50   Input ~ 0
+Text GLabel 3800 5700 2    50   Input ~ 0
 ROW4
 Wire Wire Line
+	3800 4900 3700 4900
+Wire Wire Line
+	3800 5000 3700 5000
+Wire Wire Line
 	3800 5100 3700 5100
-Wire Wire Line
-	3800 5200 3700 5200
-Wire Wire Line
-	3800 5500 3700 5500
 Text GLabel 2200 6000 0    50   Output ~ 0
 COL6
 Wire Wire Line
@@ -140,27 +140,27 @@ Text GLabel 2600 6650 3    50   Output ~ 0
 COL7
 Text GLabel 2700 6650 3    50   Output ~ 0
 COL8
-Text GLabel 3800 5800 2    50   Output ~ 0
+Text GLabel 3800 5600 2    50   Output ~ 0
 COL9
 Wire Wire Line
 	2200 5400 2300 5400
-Text GLabel 3800 5100 2    50   Output ~ 0
+Text GLabel 3800 4900 2    50   Output ~ 0
 COL14
 Wire Wire Line
 	2200 5900 2300 5900
-Text GLabel 3800 5200 2    50   Output ~ 0
+Text GLabel 3800 5000 2    50   Output ~ 0
 COL13
 Wire Wire Line
 	2200 5800 2300 5800
-Text GLabel 3800 5500 2    50   Output ~ 0
+Text GLabel 3800 5100 2    50   Output ~ 0
 COL12
 Wire Wire Line
 	2200 5700 2300 5700
-Text GLabel 3800 5600 2    50   Output ~ 0
+Text GLabel 3800 5200 2    50   Output ~ 0
 COL11
 Wire Wire Line
 	2200 5600 2300 5600
-Text GLabel 3800 5700 2    50   Output ~ 0
+Text GLabel 3800 5500 2    50   Output ~ 0
 COL10
 Wire Wire Line
 	2200 5500 2300 5500
@@ -469,15 +469,15 @@ $EndComp
 $Comp
 L power:GND #PWR06
 U 1 1 610B8E3D
-P 8600 1550
-F 0 "#PWR06" H 8600 1300 50  0001 C CNN
-F 1 "GND" H 8605 1377 50  0000 C CNN
-F 2 "" H 8600 1550 50  0001 C CNN
-F 3 "" H 8600 1550 50  0001 C CNN
-	1    8600 1550
-	1    0    0    -1  
+P 8600 1450
+F 0 "#PWR06" H 8600 1200 50  0001 C CNN
+F 1 "GND" H 8605 1277 50  0000 C CNN
+F 2 "" H 8600 1450 50  0001 C CNN
+F 3 "" H 8600 1450 50  0001 C CNN
+	1    8600 1450
+	0    1    1    0   
 $EndComp
-Text GLabel 8600 1450 0    50   Input ~ 0
+Text GLabel 8600 1550 3    50   Input ~ 0
 VBAT
 Wire Wire Line
 	4550 4800 4550 6000
@@ -637,7 +637,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 1700 6400 2300
 Wire Wire Line
-	3800 5600 3700 5600
+	3800 5200 3700 5200
 Wire Wire Line
 	4250 5200 4250 4800
 Connection ~ 4250 4800
@@ -783,14 +783,12 @@ Text GLabel 6200 1900 0    50   Input ~ 0
 D+
 Text GLabel 6400 1900 0    50   Input ~ 0
 D-
-Text GLabel 6900 1600 2    50   Input ~ 0
+Text GLabel 6900 1700 2    50   Input ~ 0
 VB
 Wire Wire Line
+	3800 5500 3700 5500
+Wire Wire Line
+	3800 5600 3700 5600
+Wire Wire Line
 	3800 5700 3700 5700
-Wire Wire Line
-	3800 5800 3700 5800
-Wire Wire Line
-	3800 5900 3700 5900
-NoConn ~ 3700 5000
-NoConn ~ 3700 4900
 $EndSCHEMATC
