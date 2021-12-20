@@ -1,3 +1,6 @@
+# Configuring PCB
+To configure this PCB, head over to my [config repository](https://github.com/tabbeber/zmk-config). Follow the instructions there, and you should be set at modifying the keymap.
+
 # About
 
 This project is inspired by [isometria75](https://github.com/ebastler/isometria-75). 
