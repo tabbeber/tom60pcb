@@ -1,37 +1,41 @@
-Reference, Quantity, Value, Footprint, Datasheet, JLCPCB
-C1 ,1,"1nF","Capacitor_SMD:C_0402_1005Metric","~","C1523"
-C2 C3 ,2,"100nF","Capacitor_SMD:C_0402_1005Metric","~","C1525"
-C4 ,1,"10nF","Resistor_SMD:R_0402_1005Metric","~","C15195"
-D1 ,1,"RED","LED_SMD:LED_0805_2012Metric","~","C84256"
-D3 D18 D25 D34 D35 D36 ,6,"1n4148","Diode_SMD:D_SOD-323F","","C2128"
-D2 ,1,"SS14","Diode_SMD:D_SMA","~","C2480"
-D4 D5 D6 D7 D8 D9 D10 D11 D12 D13 D14 D15 D16 D17 D19 D20 D21 D22 D23 D24 D26 D27 D28 D29 D30 D31 D32 D33 D37 ,29,"BAV70","Package_TO_SOT_SMD:SOT-23","","C68978"
-F1 ,1,"500mA","Fuse:Fuse_1206_3216Metric","~","C70069"
-J1 ,1,"USB_C_Receptacle_USB2.0","Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12","https://www.usb.org/sites/default/files/documents/usb_type-c.zip","C165948"
-J2 ,1,"BAT","Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal","~"
-J3 ,1,"Conn_01x04_Male","Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical","~"
-J4 ,1,"SWD","Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical","~"
-MX1 MX2 MX3 MX4 MX5 MX6 MX7 MX8 MX9 MX10 MX11 MX12 MX13 MX14 MX16 MX18 MX19 MX20 MX21 MX22 MX23 MX24 MX25 MX26 MX27 MX28 MX29 MX33 MX34 MX35 MX36 MX37 MX38 MX39 MX40 MX41 MX42 MX43 MX44 MX49 MX50 MX51 MX52 MX53 MX54 MX55 MX56 MX57 MX58 MX59 MX62 MX64 MX68 ,53,"MX-NoLED","MX_Only:MXOnly-1U-NoLED",""
-MX15 ,1,"MX-NoLED","MX_Only:MXOnly-2U-NoLED",""
-MX17 MX30 MX63 MX65 MX67 MX69 ,6,"MX-NoLED","MX_Only:MXOnly-1.5U-NoLED",""
-MX31 MX47 ,2,"MX-NoLED","MX_Only:MXOnly-1.25U-NoLED",""
-MX45 MX48 ,2,"MX-NoLED","MX_Only:MXOnly-2.25U-NoLED",""
-MX46 ,1,"MX-NoLED","MX_Only:MXOnly-ISO-ReversedStabilizers",""
-MX32 MX60 ,2,"MX-NoLED","MX_Only:MXOnly-1.75U-NoLED",""
-MX61 ,1,"MX-NoLED","MX_Only:MXOnly-2.75U-NoLED",""
-MX66 ,1,"MX-NoLED","MX_Only:MXOnly-7U-ReversedStabilizers-NoLED",""
-Q1 ,1,"AO3407","Package_TO_SOT_SMD:SOT-23","~","C181093"
-R1 ,1,"1K","Resistor_SMD:R_0603_1608Metric","~","C21190"
-R10 R11 ,2,"22","Resistor_SMD:R_0603_1608Metric","~"
-R2 ,1,"10K","Resistor_SMD:R_0603_1608Metric","~","C25804"
-R3 ,1,"100k","Resistor_SMD:R_0603_1608Metric","~","C25803"
-R4 R5 ,2,"5.1K","Resistor_SMD:R_0603_1608Metric","~","C23186"
-R6 ,1,"1M","Resistor_SMD:R_0603_1608Metric","~","C22935"
-R7 ,1,"2M","Resistor_SMD:R_0603_1608Metric","~","C22766"
-R8 R9 ,2,"10k","Resistor_SMD:R_0603_1608Metric","~","C25804"
-Reset1 ,1,"SW_Push","TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm","~"
-SW1 ,1,"Rotary_Encoder_Switch","Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm","~"
-U1 ,1,"TP4054","Package_TO_SOT_SMD:SOT-23-5","http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf","C32574"
-U2 ,1,"XC6220B331MR-G","Package_TO_SOT_SMD:SOT-23-5","https://www.diodes.com/assets/Datasheets/AP2112.pdf","C86534"
-U3 ,1,"nRF52840_holyiot_18010","isometria-parts:nRF52840_holyiot_18010","http://www.holyiot.com/tp/2019042516322180424.pdf"
-U4 ,1,"SRV05-4","Package_TO_SOT_SMD:SOT-23-6","http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF","C85364"
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"HOLE";"PKRH";1;"VAL**";;;
+2;"MX66";"MXOnly-7U-ReversedStabilizers-NoLED";1;"MX-NoLED";;;
+3;"HOLE,HOLE,HOLE";"PKRH";3;"VAL**";;;
+4;"J2";"JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal";1;"BAT";;;
+5;"J4";"PinSocket_1x04_P2.54mm_Vertical";1;"SWD";;;
+6;"MX2,MX3,MX4,MX5,MX7,MX8,MX9,MX10,MX11,MX12,MX13,MX14,MX18,MX20,MX21,MX22,MX23,MX24,MX25,MX26,MX27,MX28,MX29,MX33,MX34,MX35,MX36,MX37,MX38,MX39,MX40,MX41,MX42,MX43,MX49,MX50,MX51,MX52,MX53,MX54,MX57,MX59,MX62,MX64,MX68,MX6,MX16,MX1,MX19,MX44,MX58,MX56,MX55";"MXOnly-1U-NoLED";53;"MX-NoLED";;;
+7;"MX15";"MXOnly-2U-NoLED";1;"MX-NoLED";;;
+8;"MX17,MX30,MX65,MX67,MX69,MX63";"MXOnly-1.5U-NoLED";6;"MX-NoLED";;;
+9;"MX31,MX47";"MXOnly-1.25U-NoLED";2;"MX-NoLED";;;
+10;"MX45,MX48";"MXOnly-2.25U-NoLED";2;"MX-NoLED";;;
+11;"MX60,MX32";"MXOnly-1.75U-NoLED";2;"MX-NoLED";;;
+12;"MX61";"MXOnly-2.75U-NoLED";1;"MX-NoLED";;;
+13;"MX46";"MXOnly-ISO-ReversedStabilizers";1;"MX-NoLED";;;
+14;"HOLE,HOLE";"PKRHSL";2;"VAL**";;;
+15;"SW1";"RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm";1;"Rotary_Encoder_Switch";;;
+16;"G***,G***";"tomlogoliten";2;"LOGO";;;
+17;"D1";"LED_0805_2012Metric";1;"RED";;;
+18;"D18,D34,D3,D25,D35,D36";"D_SOD-323F";6;"1n4148";;;
+19;"Q1";"SOT-23";1;"AO3407";;;
+20;"R1";"R_0603_1608Metric";1;"1K";;;
+21;"R2";"R_0603_1608Metric";1;"10K";;;
+22;"R3";"R_0603_1608Metric";1;"100k";;;
+23;"R6";"R_0603_1608Metric";1;"1M";;;
+24;"U2";"SOT-23-5";1;"XC6220B331MR-G";;;
+25;"R7";"R_0603_1608Metric";1;"2M";;;
+26;"J1";"USB_C_Receptacle_HRO_TYPE-C-31-M-12";1;"USB_C_Receptacle_USB2.0";;;
+27;"D2";"D_SMA";1;"SS14";;;
+28;"U3";"nRF52840_holyiot_18010";1;"nRF52840_holyiot_18010";;;
+29;"U4";"SOT-23-6";1;"SRV05-4";;;
+30;"R4,R5";"R_0603_1608Metric";2;"5.1K";;;
+31;"U1";"SOT-23-5";1;"TP4054";;;
+32;"D4,D5,D6,D7,D8,D9,D10,D13,D14,D15,D16,D17,D19,D20,D21,D22,D23,D24,D26,D27,D28,D29,D30,D32,D37,D11,D12,D31,D33";"SOT-23";29;"BAV70";;;
+33;"C1";"C_0402_1005Metric";1;"1nF";;;
+34;"J3";"JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical";1;"Conn_01x04_Male";;;
+35;"F1";"Fuse_1206_3216Metric";1;"500mA";;;
+36;"R10,R11";"R_0603_1608Metric";2;"22";;;
+37;"C4";"R_0402_1005Metric";1;"10nF";;;
+38;"Reset1";"TestPoint_Bridge_Pitch2.0mm_Drill0.7mm";1;"SW_Push";;;
+39;"R8,R9";"R_0603_1608Metric";2;"10k";;;
+40;"C2,C3";"C_0402_1005Metric";2;"100nF";;;

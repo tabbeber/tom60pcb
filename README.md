@@ -13,8 +13,7 @@ This is also mostly a project for me build skills within PCB design.
 Feel free to come with any feedback - I have no clue what I'm doing.
 
 This project was originally born out of an idea to create a PCB which was specifically made for gummyworm-mounting in regular tray mount cases without needing to massacre the poor case.
-Eventually the PCB looked decent, and regular tray mount PCB would likely have a broader appeal than some hacky gummywork gasket.
-Thus this became a baseline for future wireless PCB projects - _if it works_.
+Eventually the PCB looked decent, and regular tray mount PCB would likely have a broader appeal than some hacky gummywork gasket. Though, due to lacking foresight in design on the PCB it's not compatible with the Tofu60 due to the MCU interfering with the lowest standoff.
 
 ![PCB Front](/img/front.png)
 

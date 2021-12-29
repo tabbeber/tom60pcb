@@ -1,4 +1,5 @@
 (fp_lib_table
-  (lib (name ptm-60nrf)(type KiCad)(uri ${KIPRJMOD}/ptm-60nrf.pretty)(options "")(descr ""))
-  (lib (name MX_Only)(type KiCad)(uri ${KIPRJMOD}/parts/MX_Alps_Hybrid/MX_Only.pretty)(options "")(descr ""))
+  (lib (name "ptm-60nrf")(type "KiCad")(uri "${KIPRJMOD}/ptm-60nrf.pretty")(options "")(descr ""))
+  (lib (name "MX_Only")(type "KiCad")(uri "${KIPRJMOD}/parts/MX_Alps_Hybrid/MX_Only.pretty")(options "")(descr ""))
+  (lib (name "hole")(type "KiCad")(uri "/home/tom/Documents/KiCAD/parts/hole.pretty")(options "")(descr ""))
 )
